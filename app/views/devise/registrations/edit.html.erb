@@ -21,6 +21,8 @@
          <%= f.fields_for :team do |team_form| %>
           <%= team_form.label "Business Name", autofocus: true, autocomplete: "Business name" %>
           <%= team_form.text_field :name %>
+          <%= team_form.label "Slug Name", autofocus: true, autocomplete: "Slug Name" %>
+          <%= team_form.text_field :slug %>
          <% end %>
       </div>
       <div class="field">
